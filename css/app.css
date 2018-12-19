@@ -1,0 +1,157 @@
+/* Border Box Reset
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* End Border Box Reset
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    background: #efefef;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #444;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+/* End Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.css-grid-container {
+    display: grid;
+
+
+    grid-template-columns: repeat(10, 9rem);
+    grid-template-rows: repeat(20, 9rem);
+
+    /*
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+*/
+
+    /*
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(20, auto);
+*/
+}
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 9rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+nav img {
+    height: 1.75rem;
+}
+
+.intro-copy {
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    color: rgba(68, 68, 68, .5);
+}
+
+.one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.two {
+    grid-column-start: 4;
+    grid-column-end: 7;
+
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+.three {
+    grid-column-start: 8;
+    grid-column-end: 11;
+
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.four {
+    grid-column-start: 2;
+    grid-column-end: 6;
+
+    grid-row-start: 9;
+    grid-row-end: 13;
+}
+
+.five {
+    grid-column-start: 7;
+    grid-column-end: 10;
+
+    grid-row-start: 11;
+    grid-row-end: 14;
+}
+
+.six {
+    grid-column-start: 2;
+    grid-column-end: 6;
+
+    grid-row-start: 15;
+    grid-row-end: 19;
+}
+
+.seven {
+    grid-column-start: 7;
+    grid-column-end: 10;
+
+    grid-row-start: 17;
+    grid-row-end: 20;
+}
